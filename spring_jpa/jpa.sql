@@ -1,0 +1,15 @@
+DROP DATABASE  IF EXISTS jpa;
+
+CREATE DATABASE jpa CHAR SET UTF8;
+USE jpa;
+
+CREATE TABLE university(
+id LONG NOT NULL PRIMARY KEY AUTO_INCREMENT,
+name VARCHAR(120) NOT NULL,
+accreditation VARCHAR(120) NOT NULL,
+amountOfInstitution INT(10)   NOT NULL,
+amountOfStudents INT(10)  NOT NULL,
+adress  VARCHAR(120) NOT NULL
+);
+
+SELECT * FROM university;
