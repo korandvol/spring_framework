@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	
+<title>Student registration form</title>
+</head>
+<body>
+	<form action="/students/save" th:action="@{/students/save}" th:object="${student}" method="post"
+		enctype="multipart/form-data">
+		<form class="register-form">
+			<input name= "firstName" class="firstName" type="text" placeholder="first name" /> <input
+			name= "lastName"	class="lastName" type="text" placeholder="last name" /> <input
+				name= "age" class="age" type="text" placeholder="age" /> <label>Photos:
+			</label> <input type="file" name="image" accept="image/png, image/jpeg" />
+
+			<button class="register">create</button>
+
+		
+		</form>
+
+<div>
+					<div id="singleFileUploadError"></div>
+					<div id="singleFileUploadSuccess"></div>
+				</div>
+	</form>
+	<script src="/js/main.js"></script>
+</body>
+</html>
